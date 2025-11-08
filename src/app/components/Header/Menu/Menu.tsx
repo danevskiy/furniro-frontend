@@ -27,7 +27,10 @@ export default function Menu() {
       <ul className="flex flex-wrap gap-18.75">
         {menuList.map((item) => (
           <li key={item.id}>
-            <Link className="text-black font-medium" href={item.href}>
+            <Link
+              className="text-black font-medium hover:text-mainyellow"
+              href={item.href}
+            >
               {item.title}
             </Link>
           </li>

@@ -21,7 +21,10 @@ export default function LinksColumn({
         <ul className="flex flex-col gap-11.5">
           {links.map((item) => (
             <li key={item.id}>
-              <Link href={item.href} className="text-black font-medium">
+              <Link
+                href={item.href}
+                className="text-black font-medium hover:text-mainyellow"
+              >
                 {item.title}
               </Link>
             </li>

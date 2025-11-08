@@ -4,16 +4,16 @@ export default function ToolsBar() {
   const iconSize = 28;
   return (
     <div className="flex items-center gap-11.25">
-      <Link href="#">
+      <Link className="hover:text-mainyellow" href="#">
         <User size={iconSize} />
       </Link>
-      <Link href="#">
+      <Link className="hover:text-mainyellow" href="#">
         <Search size={iconSize} />
       </Link>
-      <Link href="#">
+      <Link className="hover:text-mainyellow" href="#">
         <Heart size={iconSize} />
       </Link>
-      <Link href="#">
+      <Link className="hover:text-mainyellow" href="#">
         <ShoppingCart size={iconSize} />
       </Link>
     </div>

@@ -24,7 +24,10 @@ export default function ImageSection() {
             tellus, luctus nec ullamcorper mattis.
           </div>
 
-          <Link className="px-18 py-6.25 bg-mainyellow inline-block" href="#">
+          <Link
+            className="px-18 py-6.25 transition duration-200 bg-mainyellow inline-block hover:bg-mainyellowdark"
+            href="#"
+          >
             <span className="text-white font-bold uppercase">BUY Now</span>
           </Link>
         </div>

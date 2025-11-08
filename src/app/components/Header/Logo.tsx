@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Montserrat } from "next/font/google";
 import "@/app/globals.css";
 
@@ -9,7 +10,7 @@ const montserrat = Montserrat({
 
 export default function Logo() {
   return (
-    <div className="flex items-center gap-1.25">
+    <Link href="/" className="flex items-center gap-1.25">
       <Image
         width={1299}
         height={50}
@@ -22,6 +23,6 @@ export default function Logo() {
       >
         Furniro
       </span>
-    </div>
+    </Link>
   );
 }
