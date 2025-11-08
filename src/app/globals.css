@@ -3,6 +3,7 @@
 @theme {
   --font-poppins: var(--font-poppins);
   --color-mainyellow: #b88e2f;
+  --color-imagesectionbg: #fff3e3;
 }
 
 body {

@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function Menu() {
   const menuList = [
     {
@@ -26,9 +27,9 @@ export default function Menu() {
       <ul className="flex flex-wrap gap-18.75">
         {menuList.map((item) => (
           <li key={item.id}>
-            <a className="text-black text-base font-medium" href={item.href}>
+            <Link className="text-black font-medium" href={item.href}>
               {item.title}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>
