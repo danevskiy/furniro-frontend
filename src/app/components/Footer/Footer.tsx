@@ -48,7 +48,7 @@ export default function Footer() {
       <Container>
         <div className="flex flex-wrap pb-12 mb-8.75 border-b border-black/20">
           <div className="mr-34.5 flex flex-col gap-13.5">
-            <div className="text-black text-2xl font-bold ">Funiro.</div>
+            <div className="text-black text-2xl font-bold ">Furniro</div>
             <div className="text-neutral-400">
               400 University Drive Suite 200 Coral
               <br />
@@ -62,7 +62,7 @@ export default function Footer() {
           <SubscribeColumn title="Newsletter" />
         </div>
         <div>
-          <div className="text-black">2025 furino. All rights reverved</div>
+          <div className="text-black">2025 Furniro. All rights reverved</div>
         </div>
       </Container>
     </footer>
