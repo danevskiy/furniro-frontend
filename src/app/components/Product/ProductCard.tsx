@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { type Product } from "../types/Product";
+import { type Product } from "../../types/Product";
+import ProductTools from "./ProductTools";
 
 interface ProductProps {
   info: Product;
@@ -7,7 +8,7 @@ interface ProductProps {
 
 export default function ProductCard({ info }: ProductProps) {
   return (
-    <div className="bg-gray-100 flex flex-col">
+    <div className="bg-gray-100 flex flex-col relative group">
       <div className="relative w-full pb-[101.2%]">
         <Image
           width={285}
@@ -19,22 +20,23 @@ export default function ProductCard({ info }: ProductProps) {
       </div>
       <div className="pt-4 px-4 pb-7.5">
         <div className="text-neutral-700 text-2xl font-semibold leading-7 mb-2">
-          Syltherine
+          {info.title}
         </div>
         <div className="text-zinc-500 font-medium leading-6 mb-2">
-          Stylish cafe chair
+          {info.description}
         </div>
         <div className="flex flex-wrap gap-4 items-center">
           <span className="text-neutral-700 text-xl font-semibold leading-8">
-            Rp 2.500.000
+            Rp {info.price}
           </span>
           {info.old_price && (
             <span className="text-zinc-400 line-through leading-6">
-              Rp 3.500.000
+              Rp {info.old_price}
             </span>
           )}
         </div>
       </div>
+      <ProductTools />
     </div>
   );
 }

@@ -55,7 +55,7 @@ export default function CategoriesSection() {
         <div className="grid grid-cols-3 gap-5">
           {categories.map((cat) => (
             <Link
-              className="flex flex-col gap-7.5"
+              className="flex flex-col gap-7.5 group"
               href={cat.href}
               key={cat.id}
             >
@@ -65,7 +65,7 @@ export default function CategoriesSection() {
                   width={382}
                   height={480}
                   alt={cat.preview.title}
-                  className="absolute left-0 top-0 w-full h-full object-cover object-center"
+                  className="transition duration-200 absolute left-0 top-0 w-full h-full object-cover object-center opacity-100 group-hover:opacity-75"
                 />
               </div>
               <div className="text-zinc-800 text-2xl font-semibold text-center">

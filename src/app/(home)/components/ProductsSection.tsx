@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Container from "@/app/components/Container";
-import ProductCard from "@/app/components/ProductCard";
+import ProductCard from "@/app/components/Product/ProductCard";
 import { type Product } from "@/app/types/Product";
 
 export default function ProductsSection() {
@@ -54,6 +54,54 @@ export default function ProductsSection() {
         url: "/product1.png",
       },
     },
+    {
+      id: 5,
+      title: "Lolito",
+      description: "Luxury big sofa",
+      price: 2103000,
+      old_price: 3504000,
+      href: "#",
+      preview: {
+        title: "Dining",
+        url: "/product3.jpg",
+      },
+    },
+    {
+      id: 6,
+      title: "Syltherine",
+      description: "Stylish cafe chair",
+      price: 2500000,
+      old_price: 3500000,
+      href: "#",
+      preview: {
+        title: "Dining",
+        url: "/product1.png",
+      },
+    },
+    {
+      id: 7,
+      title: "Leviosa",
+      description: "Stylish cafe chair",
+      price: 1700000,
+      old_price: null,
+      href: "#",
+      preview: {
+        title: "Dining",
+        url: "/product2.png",
+      },
+    },
+    {
+      id: 8,
+      title: "Syltherine",
+      description: "Stylish cafe chair",
+      price: 2500000,
+      old_price: 3500000,
+      href: "#",
+      preview: {
+        title: "Dining",
+        url: "/product1.png",
+      },
+    },
   ];
   return (
     <section>
@@ -69,7 +117,7 @@ export default function ProductsSection() {
         <div className="text-center">
           <Link
             href="/products"
-            className="text-yellow-600 text-base font-semibold leading-6 border border-yellow-600 py-3 px-5 inline-block mt-8"
+            className="transition duration-200  text-yellow-600 hover:text-white hover:bg-yellow-600 text-base font-semibold leading-6 border border-yellow-600 py-3 px-5 inline-block mt-8 w-61 max-w-full"
           >
             Show More
           </Link>

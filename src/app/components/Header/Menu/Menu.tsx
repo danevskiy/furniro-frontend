@@ -9,7 +9,7 @@ export default function Menu() {
     {
       id: 2,
       title: "Shop",
-      href: "#",
+      href: "/shop",
     },
     {
       id: 3,

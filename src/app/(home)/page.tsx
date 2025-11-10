@@ -1,6 +1,7 @@
 import ImageSection from "./components/ImageSection";
 import CategoriesSection from "./components/CategoriesSection";
 import ProductsSection from "./components/ProductsSection";
+import CollageSection from "./components/CollageSection";
 export default function Home() {
   return (
     <div>
@@ -8,6 +9,7 @@ export default function Home() {
         <ImageSection />
         <CategoriesSection />
         <ProductsSection />
+        <CollageSection />
       </main>
     </div>
   );
