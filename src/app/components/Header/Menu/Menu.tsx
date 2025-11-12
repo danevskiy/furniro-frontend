@@ -23,19 +23,21 @@ export default function Menu() {
     },
   ];
   return (
-    <nav className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-      <ul className="flex flex-wrap gap-18.75">
-        {menuList.map((item) => (
-          <li key={item.id}>
-            <Link
-              className="text-black font-medium hover:text-mainyellow"
-              href={item.href}
-            >
-              {item.title}
-            </Link>
-          </li>
-        ))}
-      </ul>
-    </nav>
+    <>
+      <nav className="hidden lg:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+        <ul className="flex flex-wrap gap-10  xl:gap-18.75">
+          {menuList.map((item) => (
+            <li key={item.id}>
+              <Link
+                className="text-black font-medium hover:text-mainyellow"
+                href={item.href}
+              >
+                {item.title}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </>
   );
 }

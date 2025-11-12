@@ -107,7 +107,7 @@ export default function ShopPage() {
       <main>
         <section>
           <Container className="mt-15.5 mb-21.5">
-            <div className="grid grid-cols-4 gap-8">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-8">
               {products.map((product) => (
                 <ProductCard key={product.id} info={product} />
               ))}

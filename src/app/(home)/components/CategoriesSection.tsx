@@ -52,7 +52,7 @@ export default function CategoriesSection() {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </div>
 
-        <div className="grid grid-cols-3 gap-5">
+        <div className="grid grid-cols-1  md:grid-cols-3 gap-5">
           {categories.map((cat) => (
             <Link
               className="flex flex-col gap-7.5 group"
